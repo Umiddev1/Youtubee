@@ -5,11 +5,312 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
-  <link rel="stylesheet" href="css/main.min.css">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- /icons -->
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    <div class="header__container container">
+    <header class="youtube-content__header header">
+        <div class="header__content between-xs between-sm between-md">
+          <div class="header__logos">
+            <button class="header__btns-aside aside__btn"><i class="fal fa-bars"></i></button>
+            <a class="header___logo-link" href="#">
+              <img class="header__logo" src="img/header-img/logo-youtube.svg" alt="logo">
+            </a>
+          </div>
+        
+            <form class="header__form">
+              <label for="inp"></label>
+              <input class="header__inp" type="search" placeholder="Search" id="inp">
+              <button class="header__btn"><i class="fal fa-search"></i></button>
+              <button class="header__btns header__btns-two"><img src="img/header-img/voice.svg" alt="voice"></button>
+              <div class="header__modal modal__listening">
+                <div class="modal__listenings">
+                  <button class="modal__listenings-btn"><i class='bx bx-x'></i></button>
+                  <h3 class="modal__listenings-title">Listening...</h3>
+                  <div class="modal__listenings-imgs">
+                    <img class="modal__listenings-img" src="img/modal-img/modal-voice.svg" alt="modal">
+                  </div>
+                </div>
+              </div>
+            </form>
+          
+          <div class="header__icons">
+            <ul class="header__list">
+              <li class="header__item"><button class="header__btns header__btns-video"><img src="img/header-img/icon1.svg" alt="icon1"></button>
+                <div class="header__inner">
+                  <ul class="header__inner-list">
+                    <li class="header__inner-item"><a class="header__inner-link" href="#">Upload Video</a></li>
+                    <li class="header__inner-item"><a class="header__inner-link" href="#">Go Live</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item"><button class="header__btns header__btns-list"><img src="img/header-img/icon2.svg" alt="icon2"></button>
+                <div class="header__inner-two">
+                  <ul>
+                    <li class="header__inner-two__item header__inner-two__items"> <a class="header__inner-two__link" href="#">YouTube TV</a></li>
+                  </ul>
+                  <ul class="header__inner-two__list">
+                    <li class="header__inner-two__item header__inner-two__items"><a class="header__inner-two__link" href="#">YouTube Music</a></li>
+                    <li class="header__inner-two__item header__inner-two__items"><a class="header__inner-two__link" href="#">YouTube Kids</a></li>
+                  </ul>
+                  <ul>
+                    <li class="header__inner-two__item header__inner-two__items"><a class="header__inner-two__link" href="#">Creators Academy</a></li>
+                    <li class="header__inner-two__item header__inner-two__items"><a class="header__inner-two__link" href="#">YouTube for Artists</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item"><button class="header__btns header__btns-live"><img src="img/header-img/icon3.svg" alt="icon3"></button>
+                <div class="header__live live">
+                  <ul class="live__list between-xs between-sm between-md"> 
+                    <li class="live__item"><a class="live__link" href="#">Notifications</a></li>
+                    <li class="live__item"><a class="live__links" href="#"><i class="fas fa-cog"></i></a></li>
+                  </ul>
+                  <div class="live__group center-xs center-sm center-md">
+                    <div class="live__groups">
+                      <img class="live__img" src="img/modal-img/call.svg" alt="call">
+                      <h3 class="live__title"> Your notifications live here</h3>
+                      <p class="live__text">Subscribe to your favourite channels to recieve notifications about their latest videos</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item header__items"><button class="header__btns header__btns-account"><img src="img/header-img/user.svg" alt="user"></button>
+                <div class="header__account account">
+                  <div class="account__header">
+                    <img class="account__img" src="img/header-img/user.svg" alt="user">
+                    <div class="account__des">
+                      <h2 class="account__name">Shruti Bhutda</h2>
+                      <a class="account__googlemail" href="#">Manage Your Google Account</a>
+                    </div>
+                  </div>
+                  <ul class="account__list">  
+                    <li class="account__item">
+                      <img src="img/account-img/your-acc.svg" alt="your-acc"><a class="account__link" href="#">Your channel</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/dollor.svg" alt="dollor"><a class="account__link" href="#">Purchases and memberships</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/setting.svg" alt="setting"><a class="account__link" href="#">YouTube Studio</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/switch-acc.svg" alt="switch-acc"><a class="account__link" href="#">Switch account</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/sign-out.svg" alt="sign-out"><a class="account__link" href="#">Sign out</a>
+                    </li>
+                  </ul>
+                  <ul class="account__list">  
+                    <li class="account__item">
+                      <img src="img/account-img/ligthdark.svg" alt="your-acc"><a class="account__link" href="#">Appearance: Light</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/languaeg.svg" alt="dollor"><a class="account__link" href="#">Language: British English</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/global.svg" alt="setting"><a class="account__link" href="#">Location: India</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/setting.svg" alt="switch-acc"><a class="account__link" href="#">Settings</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/security.svg" alt="sign-out"><a class="account__link" href="#">Your data in YouTube</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/question.svg" alt="sign-out"><a class="account__link" href="#">Help</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/error.svg" alt="sign-out"><a class="account__link" href="#">Send feedback</a>
+                    </li>
+                    <li class="account__item">
+                      <img src="img/account-img/keyboard.svg" alt="sign-out"><a class="account__link" href="#">Keyboard shortcuts</a>
+                    </li>
+                  </ul>
+                  <p class="account__text">Restricted Mode: Off</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </header>
+      </div>
+    </header>
+    <div class="youtube-aside aside">
+      <div class="aside__content">
+        <ul class="aside__list">
+          <li class="aside__item center-xs"><img class="aside__img" src="img/img-aside/home.svg" alt="home"><br><a class="aside__link " href="#"><span class="aside__span">Home</span></a></li>
+          <li class="aside__item center-xs"><img class="aside__img" src="img/img-aside/navigation.svg" alt="navigation"><br><a class="aside__link" href="#">Explore</a></li>
+          <li class="aside__item center-xs"><img class="aside__img" src="img/img-aside/subs.svg" alt="subs"><br><a class="aside__link " href="#">Subscriptions</a></li>
+          <li class="aside__item center-xs"><img class="aside__img" src="img/img-aside/lbr.svg" alt="libary"><br><a class="aside__link" href="#">Library</a></li>
+        </ul>
+        <div class="aside__group">
+          <ul class="aside__list-two">
+            <li class="aside__item-two aside__item-two--active"><img class="aside__img" src="img/img-aside/home.svg" alt="img"><a class="aside__link-two" href="#">Home</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/navigation.svg" alt="img"><a class="aside__link-two" href="#">Explore</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/subs.svg" alt="img"><a class="aside__link-two" href="#">Subscriptions</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/lbr.svg" alt="img"><a class="aside__link-two" href="#">Library</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/history.svg" alt="img"><a class="aside__link-two" href="#">History</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/your-video.svg" alt="img"><a class="aside__link-two" href="#">Your Videos</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/watch.svg" alt="img"><a class="aside__link-two" href="#">Watch Later</a></li>
+            <li class="aside__item-two"><img class="aside__img" src="img/img-aside/liked.svg" alt="img"><a class="aside__link-two" href="#">Liked Videos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="youtube__big-content big-content">
+        <div class="big-content__group">
+          <ul class="big-content__list">
+            <li class="big-content__item big-content__item--active"><a class="big-content__link" href="#">All</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">User Interface design</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">UI/UX</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Logos</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Computer science</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Sales</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Music</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Live</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Stock Market</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Mixes</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Lo-fi Music</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Rap</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">School</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Game</a></li>
+            <li class="big-content__item"><a class="big-content__link" href="#">Ui</a></li>
+          </ul>
+        </div>
+        <div class="big-content__video video">
+          <div class="video__container container">
+            <ul class="video__list row">
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame1" src="https://www.youtube.com/embed/wBaiYSuqOY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar.png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">TWICE "Alcohol-Free" M/V</h3>
+                      <p class="video__text">JYP Entertainment</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame2" src="https://www.youtube.com/embed/j83eF9GHRcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (1).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Kanye West Sunday Service</h3>
+                      <p class="video__text">Kanye West</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame3" src="https://www.youtube.com/embed/LJrn5WLdka4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (2).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Abbot - Visão de Futuro (trap sp)</h3>
+                      <p class="video__text">Abbot</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame4" src="https://www.youtube.com/embed/htdrxGiWM3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (3).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Luedji Luna - Bom Mesmo É Estar</h3>
+                      <p class="video__text">Luedji Luna</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame5" src="https://www.youtube.com/embed/q5Y0XX9p20A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (4).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Elza Soares - Mulher do Fim</h3>
+                      <p class="video__text">Elza Soares</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame6" src="https://www.youtube.com/embed/8dv6JF0Jork" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (5).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Aretha Franklin - Ever Changing </h3>
+                      <p class="video__text">JYP Entertainment</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>                
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame7" src="https://www.youtube.com/embed/G6CoKql88aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (6).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Criolo - Menino Mimado</h3>
+                      <p class="video__text">Criolo</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="video__item col-lg-3 col-md-4 col-sm-6">
+                <div class="video__inner">
+                  <iframe class="video__frame video__frame8" src="https://www.youtube.com/embed/3AP7opexzSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video__des">
+                    <div>
+                      <img class="video__ava" src="img/big-content/avatar (7).png" alt="avatar">
+                    </div>
+                    <div class="video__dess">
+                      <h3 class="video__title">Criolo - Menino Mimado (Single)</h3>
+                      <p class="video__text">Criolo</p>
+                      <p class="video__text">130M views • 1 Month ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
   <script src="js/main.js"></script>
 </body>
 </html>

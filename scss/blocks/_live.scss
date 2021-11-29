@@ -1,0 +1,66 @@
+.live {
+  position: absolute;
+  z-index: 555555;
+  width: 479px;
+  height: 645px;
+  right: 30px;
+  top: -20px;
+  background-color: #fff;
+  padding: 19px 0px;
+  box-shadow: 4px -3px 27px 1px rgba(34, 60, 80, 0.2);
+  display: none;
+}
+.live__list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #C0C0C0;
+}
+.live__item {
+  padding: 0 13px;
+  padding-bottom: 13px;
+}
+.live__link {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+  transition: color 0.2s ease;
+}
+.live__link:hover {
+  color: $color-red;
+}
+.live__links {
+  color: $text-gray;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+.live__links:hover {
+  color: $color-red;
+}
+.live__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -250px;
+}
+.live__img {
+  margin-bottom: 32px;
+}
+.live__title {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $text-gray;
+  margin-bottom: 15px;
+}
+.live__text {
+  width: 294px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $text-gray;
+}
+.liveadd {
+  display: block;
+}

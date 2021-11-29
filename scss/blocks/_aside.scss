@@ -1,0 +1,83 @@
+.aside {
+  height: calc(100vh - 70px);
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  display: flex;
+  overflow: hidden;
+  &__content {
+    height: 100%;
+    width: 72px;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 43px;
+  }
+  &.aside__items {
+    margin-bottom: 25px;
+  }
+  &__list {
+    margin-top: 23px;
+  }
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__img {
+    width: 25px;
+    height: 21px;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  &__link {
+    display: block;
+    font-size: 10px;
+    line-height: 16px;
+    color: $text-gray;
+  }
+  &__span {
+    color: $color-red;
+  }
+  &__group {
+    display: none;
+    margin-top: 15px;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  &__item-two {
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    padding-left: 28px;
+    cursor: pointer;
+    &:hover {
+      background-color: #c4c4c4;
+    }
+  }
+  &__item-two:hover &__link-two {
+    color: $color-red;
+  }
+  &__item-two--active {
+    background-color: #c4c4c4;
+  }
+  &__link-two {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: $text-black;
+    display: inline-block;
+    margin-left: 32px;
+  }
+}
+.wdth {
+  width: 256px;
+}
+.aside-none {
+  display: none;
+}
+.aside-block {
+  display: block;
+}

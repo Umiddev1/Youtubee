@@ -1,0 +1,79 @@
+.header {
+  padding-top: 14px;
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+  &__form {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__inp {
+    width: 60%;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 31px;
+    font-size: 18px;
+    line-height: 16px;
+    color: $text-gray;
+    padding-left: 8px;
+    color: $text-color;
+    position: relative;
+    outline: #C4C4C4;
+    &:hover {
+      border-color: #C4C4C4;
+    }
+  }
+  &__btn {
+    width: 72px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    right: 200px;
+    top: 1px;
+    cursor: pointer;
+    background-color: #C4C4C4;
+  }
+  &__btns {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__btns-two {
+    position: relative;
+    left: 8px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 24px;
+    position: relative;
+  }
+ &__items {
+   margin-right: 0;
+   margin-left: 30px;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+      &__btn {
+        position: relative;
+        right: 72px;
+        top: 0px;
+      }
+    }
+}

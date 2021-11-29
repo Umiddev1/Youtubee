@@ -1,0 +1,41 @@
+.video {
+  background-color: rgba(196, 196, 196, 0.12);
+  margin-top: 15px;
+}
+.video__list {
+  padding-right: 20px;
+}
+.video__item {
+  padding-top: 40px;
+}
+.vidoe__inner {
+  margin-right: 20px;
+}
+.video__frame {
+  width: 295px;
+  height: 166px;
+  margin-bottom: 16px;
+}
+.video__des {
+  display: flex;
+}
+.video__dess {
+  margin-left: 16px;
+}
+.video__title {
+  width: 236px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-black;
+  margin-bottom: 32px;
+}
+.video__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-gray;
+}
+.widthadd {
+  width: 250px;
+  height: 143px;
+}

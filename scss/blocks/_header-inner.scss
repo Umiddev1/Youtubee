@@ -1,0 +1,100 @@
+.header__inner {
+  position: absolute;
+  width: 178px;
+  height: 96px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: #fff;
+  display: none;
+  z-index: 555555555555555;
+}
+.header__inner-item {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header__inner-item::before {
+  content: "";
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../../img/modal-img/video.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: -34px;
+}
+.header__inner-item:nth-child(2)::before {
+  background-image: url("../../img/modal-img/wifi.svg");
+}
+.header__inner-link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.025em;
+  color: $text-black;
+  transition: color 0.3s ease;
+}
+.header__inner-link:hover {
+  color: $color-red;
+}
+.header__inner-two {
+  position: absolute;
+  left: 0px;
+  background:#fff;
+  width: 237px;
+  padding-bottom: 10px;
+  box-shadow: 4px 4px 34px 0px rgba(34, 60, 80, 0.2);
+  display: none;
+  z-index: 5555555;
+  left: -76px;
+}
+.header__inner-two__list {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.header__inner-two__items {
+  margin-left: 55px;
+  margin-top:15px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header__inner-two__items::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("../../img/modal-img/youtube-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: -35px;
+}
+.header__inner-two__items:nth-child(1)::before {
+  background-image: url("../../img/modal-img/followers.svg");
+}
+.header__inner-two__items:nth-child(2)::before {
+  background-image: url("../../img/modal-img/round-youtube.svg");
+}
+.header__inner-two__link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 29px;
+  color: $text-black;
+  transition: color 0.3s ease;
+}
+.header__inner-two__link:hover {
+  color: $color-red;
+}
+.addblock {
+  display: block;
+}
+.addblocktwo {
+  display: block;
+}

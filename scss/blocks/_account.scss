@@ -1,0 +1,107 @@
+.account {
+  width: 321px;
+  // height: 793px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 555555;
+  right: 40px;
+  top: 0;
+  overflow-y: scroll;
+  box-shadow: 4px -3px 27px 1px rgba(34, 60, 80, 0.2);
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-red;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background:$color-red;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #fff;
+}
+::-webkit-scrollbar-track:active {
+  background: #fff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.account__header {
+  display: flex;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.46);
+}
+.account__img {
+  margin-left: 8px;
+  width: 48px;
+  height: 48px;
+}
+.account__des {
+  margin-left: 27px;
+}
+.account__name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 16px;
+  color: $text-black;
+  margin-bottom: 18px;
+}
+.account__googlemail {
+  font-size: 14px;
+  line-height: 16px;
+  color: #1f3aca;
+}
+.account__list {
+  margin-top: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.46);
+}
+.account__item {
+  display: flex;
+  align-items: center;
+  margin-left: 26px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.account__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  color: $text-gray;
+  display: inline-block;
+  margin-left: 22px;
+  transition: color 0.2s ease;
+}
+.account__link:hover {
+  color: $color-red;
+}
+.account__text {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 500;
+  color: $text-gray;
+  margin-left: 10px;
+  padding-top: 12px;
+  padding-bottom: 26px;
+}
+.accblock {
+  display: block;
+}
