@@ -569,7 +569,7 @@ a {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.863);
   visibility: hidden;
   opacity: 0;
   z-index: 999999;
@@ -828,6 +828,7 @@ a {
 
 .account {
   width: 321px;
+  height: 793px;
   background-color: #fff;
   position: absolute;
   z-index: 555555;
@@ -1056,15 +1057,20 @@ a {
 }
 
 .video__list {
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .video__item {
   padding-top: 40px;
 }
 
-.vidoe__inner {
-  margin-right: 20px;
+.video__item:hover .video__frame {
+  display: none;
+}
+
+.video__item:hover .video__gif {
+  display: block;
+  margin-bottom: 18px;
 }
 
 .video__frame {
@@ -1097,6 +1103,12 @@ a {
 }
 
 .widthadd {
-  width: 250px;
+  width: 280px;
   height: 143px;
+}
+
+.video__gif {
+  width: 295px;
+  height: 166px;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -24,12 +24,12 @@ let elFrame7 = document.querySelector('.video__frame7');
 let elFrame8 = document.querySelector('.video__frame8');
 elBtn.addEventListener("click",  function(e) {
   e.preventDefault();
-  elListeningModal.classList.add('modal-active');
+  elListeningModal.classList.toggle('modal-active');
   })
 
 elBtnX.addEventListener("click",function(e){
   e.preventDefault();
-  elListeningModal.classList.add('modal-noactive');
+  elListeningModal.classList.toggle('modal-noactive');
 })
 
 elBtnVid.addEventListener("click",function(){

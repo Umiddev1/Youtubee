@@ -3,13 +3,17 @@
   margin-top: 15px;
 }
 .video__list {
-  padding-right: 20px;
+  padding-right: 30px;
 }
 .video__item {
   padding-top: 40px;
 }
-.vidoe__inner {
-  margin-right: 20px;
+.video__item:hover .video__frame {
+  display: none;
+}
+.video__item:hover .video__gif {
+  display: block;
+  margin-bottom: 18px;
 }
 .video__frame {
   width: 295px;
@@ -36,6 +40,11 @@
   color: $text-gray;
 }
 .widthadd {
-  width: 250px;
+  width: 280px;
   height: 143px;
+}
+.video__gif {
+  width: 295px;
+  height: 166px;
+  display: none;
 }
