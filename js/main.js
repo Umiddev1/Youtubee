@@ -29,6 +29,8 @@ let elBody = document.querySelector('body');
 let elLogo = document.querySelector('.header__logo');
 let elLogos = document.querySelector('.header__logo1');
 let elDarkBtn = document.querySelector('.account__dark-btn');
+let elList = document.getElementById('video-list');
+let elInp = document.getElementById('inp');
 //varibals
 
 elBtn.addEventListener("click",  function(e) {
@@ -92,3 +94,21 @@ elDarkBtn.addEventListener("click", function() {
   elLogo.classList.toggle('imgnone');
   elLogos.classList.toggle('imgblock');
 })
+
+elInp.addEventListener("keyup", filterFunc);
+
+function filterFunc(e) {
+  let text = e.target.value.toLowerCase();
+
+  let items = elList.getElementsByTagName('li');
+  // console.log(items);
+  Array.from(items).forEach(function(item){
+    let itemName = item.textContent;
+    if(itemName.toLocaleLowerCase().indexOf(text) != -1) {
+      item.style.display = "block"; 
+    }
+    else {
+      item.style.display = "none";
+    }
+  })
+}
