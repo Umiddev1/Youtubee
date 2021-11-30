@@ -15,6 +15,7 @@
     font-size: 22px;
     cursor: pointer;
     margin-right: 43px;
+    color: var(--color-black);
   }
   &.aside__items {
     margin-bottom: 25px;
@@ -30,6 +31,13 @@
     height: 21px;
     margin-bottom: 4px;
     cursor: pointer;
+  }
+  &__imgs {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    display: none;  
   }
   &__link {
     display: block;

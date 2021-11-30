@@ -10,6 +10,7 @@
 .dark-content {
   --color-white:#282828;
   --color-black:#fff;
+  --text-color:#fff;
   background-color: var(--color-white);
   color: var(--color-black);
 }
@@ -426,6 +427,7 @@ a {
   font-size: 22px;
   cursor: pointer;
   margin-right: 43px;
+  color: var(--color-black);
 }
 .aside.aside__items {
   margin-bottom: 25px;
@@ -441,6 +443,13 @@ a {
   height: 21px;
   margin-bottom: 4px;
   cursor: pointer;
+}
+.aside__imgs {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  display: none;
 }
 .aside__link {
   display: block;
@@ -577,9 +586,20 @@ a {
   margin-right: 24px;
   position: relative;
 }
+.header__logo1 {
+  display: none;
+}
 .header__items {
   margin-right: 0;
   margin-left: 30px;
+}
+
+.imgblock {
+  display: block;
+}
+
+.imgnone {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -810,7 +830,7 @@ a {
   font-size: 18px;
   line-height: 16px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--color-black);
   transition: color 0.2s ease;
 }
 

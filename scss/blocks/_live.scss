@@ -23,7 +23,7 @@
   font-size: 18px;
   line-height: 16px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--color-black);
   transition: color 0.2s ease;
 }
 .live__link:hover {

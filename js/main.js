@@ -26,8 +26,9 @@ let elFrame8 = document.querySelector('.video__frame8');
 let elDarkList = document.querySelector('.account__dark-list');
 let elItems = document.querySelector('.account__itemss');
 let elBody = document.querySelector('body');
+let elLogo = document.querySelector('.header__logo');
+let elLogos = document.querySelector('.header__logo1');
 let elDarkBtn = document.querySelector('.account__dark-btn');
-let elLigthBtn = document.querySelector('.account__dark-btns');
 //varibals
 
 elBtn.addEventListener("click",  function(e) {
@@ -47,7 +48,6 @@ elBtnVid.addEventListener("click",function(){
   elAccount.classList.remove('accblock');
 
 })
-
 elBtnList.addEventListener("click",function(){
   elHeaderInnerTwo.classList.toggle('addblocktwo');
   elHeaderInner.classList.remove('addblock');
@@ -89,4 +89,6 @@ elItems.addEventListener("click", function() {
 
 elDarkBtn.addEventListener("click", function() {
   elBody.classList.toggle('dark-content');
+  elLogo.classList.toggle('imgnone');
+  elLogos.classList.toggle('imgblock');
 })
