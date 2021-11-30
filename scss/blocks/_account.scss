@@ -1,7 +1,7 @@
 .account {
   width: 321px;
   height: 793px;
-  background-color: #fff;
+  background-color: var(--color-white);
   position: absolute;
   z-index: 555555;
   right: 40px;
@@ -62,7 +62,7 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 16px;
-  color: $text-black;
+  color: var(--color-black);
   margin-bottom: 18px;
 }
 .account__googlemail {
@@ -78,30 +78,71 @@
   display: flex;
   align-items: center;
   margin-left: 26px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  position: relative;
   cursor: pointer;
 }
+.account__item img {
+  width: 20px;
+  height: 20px;
+}
+.account__icon {
+  position: absolute;
+  right: 24px;
+  top: 8px;  
+}
 .account__link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 29px;
-  color: $text-gray;
+  color: var(--text-gray);
   display: inline-block;
   margin-left: 22px;
   transition: color 0.2s ease;
 }
 .account__link:hover {
-  color: $color-red;
+  color: var(--color-red);
 }
 .account__text {
   font-size: 16px;
   line-height: 29px;
   font-weight: 500;
-  color: $text-gray;
+  color: var(--text-gray);
   margin-left: 10px;
   padding-top: 12px;
   padding-bottom: 26px;
 }
+.account__dark-list {
+  width: 190px;
+  height: 176px;
+  background-color:var(--color-white);
+  position: absolute;
+  z-index: 99999999;
+  box-shadow: 4px 4px 15px -2px rgba(34, 60, 80, 0.2);
+  display: none;
+  right: 22px;
+  top: 35px;
+}
+.account__dark-lists {
+  margin-top: 50px;
+}
+.account__dark-item {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.account__dark-btn {
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.account__dark-btn:hover {
+  color: var(--color-red);
+}
 .accblock {
+  display: block;
+}
+.listblock {
   display: block;
 }

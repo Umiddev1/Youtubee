@@ -5,7 +5,20 @@ $text-color: #282828;
 $text-black: #000;
 $text-gray: #888;
 
-
+:root {
+  --text-color: #282828;
+  --color-red:#ff0000;
+  --color-black:#000;
+  --text-gray:#888;
+  --color-white:#fff;
+}
+.dark-content {
+  --color-white:#282828;
+  --color-black:#fff;
+  --text-color:#fff;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
 // Container
 $width-container: 1368px;
 $p-container: 16px;

@@ -3,7 +3,7 @@
   width: 178px;
   height: 96px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  background-color: #fff;
+  background-color: var(--color-white);
   display: none;
   z-index: 555555555555555;
 }
@@ -34,7 +34,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.025em;
-  color: $text-black;
+  color: var(--color-black);
   transition: color 0.3s ease;
 }
 .header__inner-link:hover {
@@ -43,7 +43,7 @@
 .header__inner-two {
   position: absolute;
   left: 0px;
-  background:#fff;
+  background:var(--color-white);
   width: 237px;
   padding-bottom: 10px;
   box-shadow: 4px 4px 34px 0px rgba(34, 60, 80, 0.2);
@@ -86,11 +86,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 29px;
-  color: $text-black;
+  color: var(--color-black);
   transition: color 0.3s ease;
 }
 .header__inner-two__link:hover {
-  color: $color-red;
+  color: var(--color-red);
 }
 .addblock {
   display: block;

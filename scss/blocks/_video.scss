@@ -31,13 +31,13 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  color: $text-black;
+  color: var(--color-black);
   margin-bottom: 32px;
 }
 .video__text {
   font-size: 12px;
   line-height: 16px;
-  color: $text-gray;
+  color: var(--text-gray);
 }
 .widthadd {
   width: 280px;

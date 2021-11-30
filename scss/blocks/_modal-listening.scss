@@ -14,7 +14,7 @@
 .modal__listenings {
   width: 592px;
   height: 414px;
-  background-color: #fff;
+  background-color:var(--color-white);
   margin-top: 50px;
   position: relative;
   z-index: 999;
@@ -22,7 +22,7 @@
 .modal__listenings-title {
   font-size: 26px;
   line-height: 16px;
-  color: $text-black;
+  color: var(--color-black);
   font-weight: 400;
   padding-top: 61px;
   padding-left: 47px;
@@ -38,7 +38,7 @@
   transition: color 0.4s ease;
 }
 .modal__listenings-btn:hover {
-  color: $color-red;
+  color: var(--color-red);
 }
 .modal__listenings-btn:active {
   color:rgba(255, 0, 0, 0.5);
@@ -50,7 +50,11 @@
 }
 .modal__listenings-img {
   cursor: pointer;
+  animation-name: voice-animation;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
+ 
 .modal-active {
   visibility: visible;
   opacity: 1;

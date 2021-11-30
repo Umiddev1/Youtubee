@@ -1,3 +1,4 @@
+// varibals
 let  elListeningModal = document.querySelector(".modal__listening");
 let elBtn = document.querySelector('.header__btns-two');
 let elHeaderInner = document.querySelector('.header__inner');
@@ -22,6 +23,13 @@ let elFrame5 = document.querySelector('.video__frame5');
 let elFrame6 = document.querySelector('.video__frame6');
 let elFrame7 = document.querySelector('.video__frame7');
 let elFrame8 = document.querySelector('.video__frame8');
+let elDarkList = document.querySelector('.account__dark-list');
+let elItems = document.querySelector('.account__itemss');
+let elBody = document.querySelector('body');
+let elDarkBtn = document.querySelector('.account__dark-btn');
+let elLigthBtn = document.querySelector('.account__dark-btns');
+//varibals
+
 elBtn.addEventListener("click",  function(e) {
   e.preventDefault();
   elListeningModal.classList.toggle('modal-active');
@@ -34,18 +42,31 @@ elBtnX.addEventListener("click",function(e){
 
 elBtnVid.addEventListener("click",function(){
   elHeaderInner.classList.toggle('addblock');
+  elHeaderInnerTwo.classList.remove('addblocktwo');
+  elLive.classList.remove('liveadd');
+  elAccount.classList.remove('accblock');
+
 })
 
 elBtnList.addEventListener("click",function(){
   elHeaderInnerTwo.classList.toggle('addblocktwo');
+  elHeaderInner.classList.remove('addblock');
+  elLive.classList.remove('liveadd');
+  elAccount.classList.remove('accblock');
 })
 
 elBtnLive.addEventListener("click", function() {
   elLive.classList.toggle('liveadd');
+  elHeaderInner.classList.remove('addblock');
+  elHeaderInnerTwo.classList.remove('addblocktwo');
+  elAccount.classList.remove('accblock');
 })
 
 elBtnAccount.addEventListener("click",function() {
   elAccount.classList.toggle('accblock');
+  elHeaderInner.classList.remove('addblock');
+  elHeaderInnerTwo.classList.remove('addblocktwo');
+  elLive.classList.remove('liveadd');
 })
 elBtnAside.addEventListener("click",function() {
   elContentAside.classList.toggle('wdth');
@@ -60,4 +81,12 @@ elBtnAside.addEventListener("click",function() {
   elFrame6.classList.toggle('widthadd')
   elFrame7.classList.toggle('widthadd')
   elFrame8.classList.toggle('widthadd')
+})
+
+elItems.addEventListener("click", function() {
+  elDarkList.classList.toggle('listblock');
+})
+
+elDarkBtn.addEventListener("click", function() {
+  elBody.classList.toggle('dark-content');
 })

@@ -5,7 +5,7 @@
   height: 645px;
   right: 30px;
   top: -20px;
-  background-color: #fff;
+  background-color:var(--color-white);
   padding: 19px 0px;
   box-shadow: 4px -3px 27px 1px rgba(34, 60, 80, 0.2);
   display: none;
@@ -27,15 +27,15 @@
   transition: color 0.2s ease;
 }
 .live__link:hover {
-  color: $color-red;
+  color: var(--color-red);
 }
 .live__links {
-  color: $text-gray;
+  color: var(--text-gray);
   font-size: 20px;
   transition: color 0.2s ease;
 }
 .live__links:hover {
-  color: $color-red;
+  color: var(--color-red);
 }
 .live__group {
   display: flex;
@@ -51,7 +51,7 @@
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
-  color: $text-gray;
+  color: var(--text-gray);
   margin-bottom: 15px;
 }
 .live__text {
@@ -59,7 +59,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  color: $text-gray;
+  color: var(--text-gray);
 }
 .liveadd {
   display: block;
